@@ -33,7 +33,7 @@ Linux:
 Simply clone this repository and run:
 
 ``
-docker-compose up -d
+sudo docker-compose up -d
 ``
 
 Be certain to add the following to your /etc/hosts file:
