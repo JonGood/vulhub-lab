@@ -68,7 +68,7 @@ sudo docker-compose down -v
 ```
 
 ## Rebuild Containers
-If you need to rebuild a container for whatever reason (rebuild Kali example):
+If you need to rebuild a container from scratch (rebuild Kali example):
 ```
 sudo docker-compose build --no-cache kali
 ```
