@@ -9,6 +9,13 @@ This also allows you to have multiple containers listening on the same port to a
 Modify for your own needs!
 
 
+## Credits
+
+-Original Idea (Vulhub): https://github.com/vulhub/vulhub
+
+-Modified Code (SecurityWeekly): https://github.com/SecurityWeekly/vulhub-lab
+
+
 ## Prerequisites
 
 You must have Docker installed to your system.
@@ -74,10 +81,3 @@ If you want to completely remove the containers:
 
 2. sudo docker-compose rm
 ```
-
-
-## Credits
-
--Original Idea (Vulhub): https://github.com/vulhub/vulhub
-
--Modified Code (SecurityWeekly): https://github.com/SecurityWeekly/vulhub-lab
