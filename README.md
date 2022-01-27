@@ -60,6 +60,11 @@ When you are done and ready to shutdown:
 sudo docker-compose down -v
 ```
 
+If you want to completely remove the containers:
+```
+sudo docker-compose stop
+sudo docker-compose rm
+```
 
 Modify for your own needs!
 
