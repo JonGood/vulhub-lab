@@ -16,13 +16,13 @@ I've modified this to fit my own needs.
 You must have Docker installed to your system.
 
 Linux:
-..
-sudo apt install -y docker.io
+``
+1. sudo apt install -y docker.io
 
-sudo systemctl enable docker --now
+2. sudo systemctl enable docker --now
 
-sudo usermod -aG docker $USER
-..
+3. sudo usermod -aG docker $USER
+``
 
 
 ## Usage
