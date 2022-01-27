@@ -29,7 +29,6 @@ Linux:
 3. sudo usermod -aG docker $USER
 
 4. sudo apt install docker-compose
-
 ```
 
 
