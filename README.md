@@ -22,7 +22,7 @@ Linux:
 2. sudo systemctl enable docker --now
 
 3. sudo usermod -aG docker $USER
-4. ..
+..
 
 
 ## Usage
