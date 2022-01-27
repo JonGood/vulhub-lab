@@ -84,7 +84,7 @@ services:
    container_name: tomcat
    volumes:
     - ./tomcat/tomcat8/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
-    - ./tomcat/tcomat8/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
+    - ./tomcat/tomcat8/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
     - ./tomcat/tomcat8/context.xml:/usr/local/tomcat/webapps/host-manager/META-INF/context.xml
    ports:
      - "8080:8080"
