@@ -51,6 +51,7 @@ Be certain to add the following to your /etc/hosts file:
 10.1.1.9        telnetserver
 10.1.1.10       kali
 10.1.1.11       solr-log4j
+10.1.1.12       tomcat
 ```
 
 
