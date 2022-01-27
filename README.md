@@ -70,8 +70,9 @@ sudo docker-compose build --no-cache kali
 ## Remove Containers
 If you want to completely remove the containers:
 ```
-sudo docker-compose stop
-sudo docker-compose rm
+1. sudo docker-compose stop
+
+2. sudo docker-compose rm
 ```
 
 Modify for your own needs!
