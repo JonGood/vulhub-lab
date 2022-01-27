@@ -12,6 +12,12 @@ RUN rm -fR /var/lib/apt/ && \
 # Update DB and clean'up!
 RUN updatedb && \
     apt-get autoremove -y && \
-    apt-get clean 
+    apt-get clean
+    
+# Enable SSH
+RUN sudo update-rc.d -f ssh remove && \
+    sudo update-rc.d -f ssh defaults && \
+    sudo service ssh restart && \
+    sudo update-rc.d -f ssh enable 2 3 4 5
 
 CMD ["/bin/bash"]
