@@ -78,13 +78,14 @@ services:
      vulhubnet:
        ipv4_address: 10.1.1.11
        
+# https://github.com/vulhub/vulhub/tree/master/tomcat/tomcat8
  tomcat:
    image: vulhub/tomcat:8.0
    container_name: tomcat
    volumes:
-    - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
-    - ./context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
-    - ./context.xml:/usr/local/tomcat/webapps/host-manager/META-INF/context.xml
+    - ./tomcat/tomcat8/tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
+    - ./tomcat/tcomat8/context.xml:/usr/local/tomcat/webapps/manager/META-INF/context.xml
+    - ./tomcat/tomcat8/context.xml:/usr/local/tomcat/webapps/host-manager/META-INF/context.xml
    ports:
      - "8080:8080"
    hostname: tomcat
