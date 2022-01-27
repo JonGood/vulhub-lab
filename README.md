@@ -53,6 +53,13 @@ Be certain to add the following to your /etc/hosts file:
 10.1.1.11       solr-log4j
 ```
 
+
+List docker containers AND ports:
+```
+sudo docker ps
+```
+
+
 To interact with Kali directly from the command line:
 ```
 sudo docker exec -it kali /bin/bash
@@ -64,6 +71,7 @@ When you are done and ready to shutdown:
 ```
 sudo docker-compose down -v
 ```
+
 
 ## Rebuild Containers
 If you need to rebuild a container from scratch (rebuild Kali example):
