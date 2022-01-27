@@ -60,6 +60,5 @@ Modify for your own needs!
 
 ## Credits
 
-Thanks to Vulhub: https://github.com/vulhub/vulhub
-
-Thanks to SecurityWeekly: https://github.com/SecurityWeekly/vulhub-lab
+-Original Idea (Vulhub): https://github.com/vulhub/vulhub
+-Modified Code (SecurityWeekly): https://github.com/SecurityWeekly/vulhub-lab
