@@ -6,9 +6,7 @@ The main purpose is to create a separate network and containers that can be refe
 
 This also allows you to have multiple containers listening on the same port to avoid confusing port mappings.
 
-This repo started based on both Vulhub and SecurityWeekly's repos on building a docker lab.
-
-I've modified this to fit my own needs.
+Modify for your own needs!
 
 
 ## Prerequisites
@@ -76,8 +74,6 @@ If you want to completely remove the containers:
 
 2. sudo docker-compose rm
 ```
-
-Modify for your own needs!
 
 
 ## Credits
