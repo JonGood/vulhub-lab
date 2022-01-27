@@ -55,6 +55,8 @@ To interact with Kali directly from the command line:
 sudo docker exec -it kali /bin/bash
 ```
 
+
+## Shutdown Containers
 When you are done and ready to shutdown:
 ```
 sudo docker-compose down -v
