@@ -17,11 +17,11 @@ You must have Docker installed to your system.
 
 Linux:
 ..
-1. sudo apt install -y docker.io
+sudo apt install -y docker.io
 
-2. sudo systemctl enable docker --now
+sudo systemctl enable docker --now
 
-3. sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER
 ..
 
 
