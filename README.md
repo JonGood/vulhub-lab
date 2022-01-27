@@ -50,6 +50,11 @@ Be certain to add the following to your /etc/hosts file:
 
 ```
 
+To interact with Kali directly from the command line:
+```
+sudo docker exec -it kali /bin/bash
+```
+
 Modify for your own needs!
 
 Thanks to Vulhub: https://github.com/vulhub/vulhub
