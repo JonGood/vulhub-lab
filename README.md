@@ -17,7 +17,7 @@ You must have Docker installed to your system.
 
 Linux:
 ```
-1. sudo apt install -y docker.io
+1. sudo apt install -y docker.io --fix-missing
 
 2. sudo systemctl enable docker --now
 
