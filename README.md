@@ -57,6 +57,8 @@ sudo docker exec -it kali /bin/bash
 
 Modify for your own needs!
 
+## Credits
+
 Thanks to Vulhub: https://github.com/vulhub/vulhub
 
 Thanks to SecurityWeekly: https://github.com/SecurityWeekly/vulhub-lab
