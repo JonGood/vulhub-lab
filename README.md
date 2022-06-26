@@ -2,43 +2,35 @@
 
 This docker-compose setup allows you to easily spin up a security testing/research environment.
 
-The main purpose is to create a separate network and containers that can be referenced by name.
+The main purpose of this environment is to create a dedicated network with containers that can be referenced by name.
 
-This also allows you to have multiple containers listening on the same port to avoid confusing port mappings.
+This also allows you to have multiple containers listening on the same port to avoid conflicting port mappings.
 
-Modify for your own needs!
-
+Add/delete/update the containers for your own needs!
 
 ## Credits
 
--Original Idea (Vulhub): https://github.com/vulhub/vulhub
-
--Modified Code (SecurityWeekly): https://github.com/SecurityWeekly/vulhub-lab
-
+- Original Idea (Vulhub): https://github.com/vulhub/vulhub
+- Modified Code (SecurityWeekly): https://github.com/SecurityWeekly/vulhub-lab
 
 ## Prerequisites
 
-You must have Docker installed to your system.
+You must have Docker installed on your system. Below are the instructions to install Docker on Linux.
 
-Linux:
 ```
-1. sudo apt install -y docker.io --fix-missing
-
-2. sudo systemctl enable docker --now
-
-3. sudo usermod -aG docker $USER
-
-4. sudo apt install docker-compose
+sudo apt install -y docker.io --fix-missing
+sudo systemctl enable docker --now
+sudo usermod -aG docker $USER
+sudo apt install docker-compose
 ```
-
 
 ## Usage
 
-Simply clone this repository and run:
+Clone this repository and run the command
 
-``
-sudo docker-compose up -d
-``
+```
+docker-compose up -d
+```
 
 Be certain to add the following to your /etc/hosts file:
 
@@ -54,39 +46,35 @@ Be certain to add the following to your /etc/hosts file:
 10.1.1.12       tomcat
 ```
 
-
 List docker containers AND ports:
 ```
-sudo docker ps
+docker ps
 ```
-
 
 To interact with Kali directly from the command line:
-```
-sudo docker exec -it kali /bin/bash
-```
 
+```
+docker exec -it kali /bin/bash
+```
 
 ## Shutdown Containers
 When you are done and ready to shutdown:
-```
-sudo docker-compose down -v
-```
 
+```
+docker-compose down -v
+```
 
 ## Rebuild Containers
 If you need to rebuild a container from scratch (rebuild Kali example):
-```
-sudo docker-compose build --no-cache [service_name]
 
-sudo docker-compose build --no-cache kali
 ```
-
+docker-compose build --no-cache [service_name]
+docker-compose build --no-cache kali
+```
 
 ## Remove Containers
 If you want to completely remove the containers:
 ```
-1. sudo docker-compose stop
-
-2. sudo docker-compose rm
+sudo docker-compose stop
+sudo docker-compose rm
 ```
