@@ -26,11 +26,15 @@ sudo apt install docker-compose
 
 ## Usage
 
-Clone this repository and run the command
+To start the lab, clone this repository and run the command
 
 ```
 docker-compose up -d
 ```
+
+There are a couple of notes we should make here.
+- The `docker-compose` command both **builds the images** and starts the containers. If the images are not present on your docker host yet, this might take a while.
+- The `docker-compose.yml` file at the root level specifies the containers to be deployed. If you just want a few of the containers for testing purposes, feel free to comment out the containers you dont need.
 
 Be certain to add the following to your /etc/hosts file:
 
@@ -46,35 +50,24 @@ Be certain to add the following to your /etc/hosts file:
 10.1.1.12       tomcat
 ```
 
-List docker containers AND ports:
+To list the running containers run
+
 ```
 docker ps
 ```
 
-To interact with Kali directly from the command line:
+To interact with your Kali Linux container for testing run
 
 ```
 docker exec -it kali /bin/bash
 ```
 
-## Shutdown Containers
-When you are done and ready to shutdown:
+Since we are starting a bash shell in the Kali container, you should see the default Kali prompt and have autocompletion enabled.
 
-```
-docker-compose down -v
-```
+Once you are done with the lab, run 
 
-## Rebuild Containers
-If you need to rebuild a container from scratch (rebuild Kali example):
-
-```
-docker-compose build --no-cache [service_name]
-docker-compose build --no-cache kali
+```shell
+docker-compose down
 ```
 
-## Remove Containers
-If you want to completely remove the containers:
-```
-sudo docker-compose stop
-sudo docker-compose rm
-```
+to stop and remove the running containers.
