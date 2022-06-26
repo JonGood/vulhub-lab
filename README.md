@@ -29,26 +29,12 @@ sudo apt install docker-compose
 To start the lab, clone this repository and run the command
 
 ```
-docker-compose up -d
+docker-compose up
 ```
 
 There are a couple of notes we should make here.
-- The `docker-compose` command both **builds the images** and starts the containers. If the images are not present on your docker host yet, this might take a while.
+- The `docker-compose` command both builds the images and starts the containers. If the images are not present on your docker host yet, building them might take a while.
 - The `docker-compose.yml` file at the root level specifies the containers to be deployed. If you just want a few of the containers for testing purposes, feel free to comment out the containers you dont need.
-
-Be certain to add the following to your /etc/hosts file:
-
-```
-# Vulhub lab
-10.1.1.5        shellshock
-10.1.1.6        jenkins
-10.1.1.7        phpmyadmin
-10.1.1.8        mysql
-10.1.1.9        telnetserver
-10.1.1.10       kali
-10.1.1.11       solr-log4j
-10.1.1.12       tomcat
-```
 
 To list the running containers run
 
@@ -63,6 +49,11 @@ docker exec -it kali /bin/bash
 ```
 
 Since we are starting a bash shell in the Kali container, you should see the default Kali prompt and have autocompletion enabled.
+
+```shell
+┌──(root㉿kali)-[/]
+└─# cat /etc/os-release 
+```
 
 Once you are done with the lab, run 
 
