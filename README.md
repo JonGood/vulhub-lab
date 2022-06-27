@@ -35,7 +35,7 @@ docker-compose up
 Important points about this command:
 - The `docker-compose` command first builds the images and then starts the containers. If the images are not yet present on the docker host, building them might take a while.
 - The `docker-compose.yml` file at the root level specifies the containers to be deployed. If you want just a few of the containers for testing purposes, feel free to comment out the containers in this file you don't need.
-- If the any of these command fail, you might need to use `sudo <command>` to run as root.
+- If the any of the commands in this repo fail, you might need to use `sudo <command>` to run as root.
 
 To list the running containers (and their IP addresses) run
 
