@@ -10,7 +10,7 @@ Add, delete or update the list of vulnerable containers for your own needs!
 
 ## Video Walkthrough
 
-Video walkthrough on using this repo can be found at: https://www.jongood.com/build-a-hacking-lab-with-docker-containers-become-a-hacker/
+Walkthrough posted at: https://www.jongood.com/build-a-hacking-lab-with-docker-containers-become-a-hacker/
 
 
 ## Prerequisites
